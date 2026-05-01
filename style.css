@@ -49,7 +49,21 @@ nav a {
   color: #333;
   font-weight: 500;
   position: relative;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav a i {
+  font-size: 16px;
+  display: none; /* Hide icons on desktop by default or keep them? User said horizontal in desktop. Icons might look good. */
+}
+
+/* Show icons on desktop if we want, but user just said "horizontal". Let's keep icons hidden on desktop for a cleaner look if preferred, or show them. I'll show them for "premium" feel. */
+nav a i {
+  display: inline-block;
+  color: #ff007f;
 }
 
 nav a::after {
@@ -731,10 +745,115 @@ form button:hover {
 
 /* RESPONSIVE */
 @media(max-width:768px) {
+  html {
+    scroll-padding-top: 20px;
+  }
+
+  body {
+    padding-left: 80px;
+  }
+
+  .navbar {
+    width: 80px;
+    height: 100vh;
+    flex-direction: column;
+    padding: 30px 0;
+    justify-content: flex-start;
+    gap: 40px;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .logo div:last-child {
+    display: none;
+  }
+
+  .logo .circle {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  nav a {
+    flex-direction: column;
+    margin: 0;
+    gap: 4px;
+    font-size: 10px;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  nav a i {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+
+  nav a span {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  nav a::after {
+    display: none;
+  }
+
+  nav a.active {
+    background: linear-gradient(90deg, rgba(255, 0, 127, 0.1), transparent);
+    color: #ff007f;
+    border-right: 3px solid #ff007f;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
 
   .project-grid,
   .contact-container,
   .about-container {
     flex-direction: column;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .bio-wrapper {
+    padding: 30px;
+  }
+}
+
+@media(max-width: 480px) {
+  body {
+    padding-left: 70px;
+  }
+
+  .navbar {
+    width: 70px;
+  }
+  
+  nav a span {
+    font-size: 9px;
   }
 }
