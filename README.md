@@ -76,6 +76,3 @@ Feel free to ⭐ the repository and connect with me on LinkedIn!
 
 ### © 2026 Nishchitha N R | All Rights Reserved
 ```
-
----
-
