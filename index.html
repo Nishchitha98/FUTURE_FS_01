@@ -8,28 +8,17 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Official portfolio of Nishchitha N R. Aspiring Full Stack Web Developer specializing in Java, Python, and Machine Learning. Exploring the intersection of design and technology.">
+    content="Official portfolio of Nishchitha N R. Aspiring Full Stack Web Developer specializing in Java, Python, and Machine Learning.">
   <meta name="keywords"
-    content="Nishchitha N R, Web Developer, Full Stack Developer, Portfolio, Software Engineer, Java, Python, Machine Learning, Mysore">
+    content="Nishchitha N R, Web Developer, Full Stack Developer, Portfolio, Software Engineer, Java, Python, Machine Learning">
   <meta name="author" content="Nishchitha N R">
-  <meta name="robots" content="index, follow">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Nishchitha N R | Portfolio">
-  <meta property="og:description"
-    content="Building ideas into reality. Explore my projects, skills, and professional journey.">
-  <meta property="og:url" content="https://nishchitha-portfolio.netlify.app/">
-  <meta property="og:image"
-    content="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=2070&auto=format&fit=crop">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Nishchitha N R | Portfolio">
-  <meta property="twitter:description"
-    content="Building ideas into reality. Explore my projects, skills, and professional journey.">
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
@@ -37,37 +26,42 @@
 
 <body>
 
+  <!-- Decorative Blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
   <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">
+  <header class="navbar" id="navbar">
+    <a href="#" class="logo">
       <div class="circle">NR</div>
-      <div>
+      <div class="logo-text">
         <h3>Nishchitha N R</h3>
-        <p>Creative Web Developer</p>
+        <p>Creative Developer</p>
       </div>
-    </div>
+    </a>
 
     <nav>
-      <a href="#about"><i class="fa-solid fa-user"></i><span>About</span></a>
-      <a href="#education"><i class="fa-solid fa-graduation-cap"></i><span>Education</span></a>
+      <a href="#about" class="active"><i class="fa-solid fa-user"></i><span>About</span></a>
       <a href="#skills"><i class="fa-solid fa-laptop-code"></i><span>Skills</span></a>
       <a href="#projects"><i class="fa-solid fa-folder-open"></i><span>Projects</span></a>
       <a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
     </nav>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="home">
+    <div class="reveal">
 
-    <h1>NISHCHITHA N R</h1>
-    <h2>Aspiring Full Stack Web Developer</h2>
-
-
-
-    <div class="buttons">
-      <a href="#contact"><button>Contact Me</button></a>
-      <a href="#projects"><button>View Projects</button></a>
-      <a href="resume.pdf" download target="_blank"><button>Resume</button></a>
+      <h1>NISHCHITHA N R</h1>
+      <h2>Aspiring <span class="highlight">Full Stack Developer</span> & AI Enthusiast</h2>
+      <div class="buttons">
+        <a href="#contact" class="btn btn-primary">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#projects" class="btn btn-outline">View Work</a>
+        <a href="resume.pdf" class="btn btn-outline" download><i class="fa-solid fa-download"></i> Resume</a>
+      </div>
     </div>
   </section>
 
@@ -76,22 +70,41 @@
     <div class="section-title">
       <div class="title-icon"><i class="fa-solid fa-user"></i></div>
       <h2>About Me</h2>
+      <p>Building digital experiences with purpose and passion.</p>
     </div>
 
     <div class="about-container">
-      <div class="bio-wrapper">
-        <div class="bio-main">
-          <h3>Hello, I'm <span class="highlight">Nishchitha</span></h3>
-          <p>
-            I am a 3rd-year Computer Science student passionate about Full Stack Development.
-            I build scalable web applications using Java, React, and modern technologies,
-            and I enjoy solving real-world problems through code.
-          </p>
-          <div class="bio-tags">
-            <span>Full Stack</span>
-            <span>Data Structures</span>
-            <span>Machine Learning</span>
+      <div class="bio-main">
+        <h3>Hello, I'm <span class="highlight">Nishchitha</span></h3>
+        <p>
+          I am a Computer Science student passionate about building scalable full-stack applications and AI-powered
+          solutions.
+          I enjoy turning ideas into real-world products with clean UI and efficient backend systems.
+        </p>
+        <div class="about-highlights">
+
+          <div class="about-item">
+            <h4>🎯 What I do</h4>
+            <p>Full Stack Web Development using Java, React, and modern backend systems.</p>
           </div>
+
+          <div class="about-item">
+            <h4>🚀 What I’m learning</h4>
+            <p>System Design, Advanced Java, Backend scalability, and Machine Learning integration.</p>
+          </div>
+
+          <div class="about-item">
+            <h4>🧠 What I want to build</h4>
+            <p>AI-powered applications and real-world solutions that solve impactful problems.</p>
+          </div>
+          <br>
+        </div>
+        <div class="bio-tags">
+          <span class="tag">Java</span>
+          <span class="tag">React.js</span>
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">UI/UX Design</span>
         </div>
       </div>
     </div>
@@ -106,27 +119,26 @@
 
     <div class="education-container">
       <div class="edu-card">
-        <div class="edu-content">
-          <div class="edu-header">
-            <h3>Bachelor of Engineering in Computer Science</h3>
-            <div class="edu-date"><i class="fa-regular fa-calendar-days"></i> 2023 - Present</div>
-          </div>
-          <div class="edu-institution">Maharaja Institute of Technology Mysore</div>
-          <span class="edu-institution">CGPA: 9.4 / 10</span>
+        <div class="edu-info">
+          <h3>B.E. in Computer Science</h3>
+          <span class="edu-institution">Maharaja Institute of Technology Mysore</span>
+          <div class="edu-date"><i class="fa-solid fa-star"></i> CGPA: 9.4 / 10</div>
+        </div>
+        <div class="edu-grade">
+          <span class="tag"><i class="fa-regular fa-calendar-days"></i> 2023 - 2027</span>
         </div>
       </div>
-    </div>
-    <br>
-    <div class="edu-card">
-      <div class="edu-content">
-        <div class="edu-header">
-          <h3>Pre-University College</h3>
-          <div class="edu-date"><i class="fa-regular fa-calendar-days"></i> 2021 - 2023</div>
+
+      <div class="edu-card">
+        <div class="edu-info">
+          <h3>Pre-University Education</h3>
+          <span class="edu-institution">Focus PU College, Channarayapatna</span>
+          <div class="edu-date"><i class="fa-solid fa-star"></i> Percentile: 93.3%</div>
         </div>
-        <div class="edu-institution">Focus PU College, Channarayapatna</div>
-        <span class="edu-institution">Percentile: 93.3%</span>
+        <div class="edu-grade">
+          <span class="tag"><i class="fa-regular fa-calendar-days"></i> 2021 - 2023</span>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -135,34 +147,29 @@
     <div class="section-title">
       <div class="title-icon"><i class="fa-solid fa-laptop-code"></i></div>
       <h2>Tech Stack</h2>
+      <p>The tools I use to bring ideas to life.</p>
     </div>
 
-    <div class="grid">
+    <div class="skills-grid">
       <div class="skill-card">
-        <h3>Programming</h3>
+        <h3>Core Technologies</h3>
         <div class="tech-icons">
           <div class="tech-item"><i class="fa-brands fa-java"></i><span>Java</span></div>
-          <div class="tech-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
-          <div class="tech-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+          <div class="tech-item"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+          <div class="tech-item"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
           <div class="tech-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-          <div class="tech-item"><i class="fa-solid fa-microchip"></i><span>C</span></div>
           <div class="tech-item"><i class="fa-brands fa-react"></i><span>React</span></div>
+          <div class="tech-item"><i class="fa-brands fa-python"></i><span>Python</span></div>
         </div>
       </div>
 
       <div class="skill-card">
-        <h3>Databases</h3>
+        <h3>Databases & AI</h3>
         <div class="tech-icons">
           <div class="tech-item"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
           <div class="tech-item"><i class="fa-solid fa-leaf"></i><span>MongoDB</span></div>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <h3>ML Libraries</h3>
-        <div class="tech-icons">
-          <div class="tech-item"><i class="fa-solid fa-cube"></i><span>NumPy</span></div>
-          <div class="tech-item"><i class="fa-solid fa-table"></i><span>Pandas</span></div>
+          <div class="tech-item"><i class="fa-solid fa-brain"></i><span>NumPy</span></div>
+          <div class="tech-item"><i class="fa-solid fa-chart-line"></i><span>Pandas</span></div>
           <div class="tech-item"><i class="fa-solid fa-eye"></i><span>OpenCV</span></div>
         </div>
       </div>
@@ -173,115 +180,140 @@
   <section id="projects" class="projects">
     <div class="section-title">
       <div class="title-icon"><i class="fa-solid fa-folder-open"></i></div>
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
+      <p>A glimpse into my recent creations.</p>
     </div>
 
     <div class="project-grid">
-
       <div class="project-card">
         <div class="img-wrapper">
-          <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=2070&auto=format&fit=crop" alt="AI Resume Analyser Project Preview">
+          <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=2070&auto=format&fit=crop"
+            alt="AI Resume Analyser">
         </div>
-        <h3>AI Resume Analyser</h3>
-        <p>Smartly parses resumes to provide instant feedback and job-matching scores.</p>
-        <br>
-        <div class="links">
-          <a href="#">GitHub</a>
-          <a href="#">Live</a>
+        <div class="project-content">
+          <h3>AI Resume Analyser</h3>
+          <p>Smartly parses resumes to provide instant feedback and job-matching scores using NLP.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>NLP</span>
+            <span>Flask</span>
+            <span>React</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
         </div>
       </div>
 
       <div class="project-card">
         <div class="img-wrapper">
-          <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop" alt="Hyperlocal Service Finder Project Preview">
+          <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop"
+            alt="Hyperlocal Service Finder">
         </div>
-        <h3>Hyperlocal Service Finder</h3>
-        <p>Quickly locate and book trusted home services right in your neighborhood.</p>
-        <br>
-        <div class="links">
-          <a href="#">GitHub</a>
-          <a href="#">Live</a>
+        <div class="project-content">
+          <h3>Hyperlocal Service Finder</h3>
+          <p>Quickly locate and book trusted home services right in your neighborhood.</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Maps API</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
         </div>
       </div>
 
       <div class="project-card">
         <div class="img-wrapper">
-          <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=2076&auto=format&fit=crop" alt="Smart Job Tracker Project Preview">
+          <img src="crm_dashboard.png" alt="Client Lead Management System">
         </div>
-        <h3>Smart job tracker</h3>
-        <p>Organize your career journey by tracking applications and interview progress in one place.</p>
-        <br>
-        <div class="links">
-          <a href="#">GitHub</a>
-          <a href="#">Live</a>
+        <div class="project-content">
+          <h3>Client Lead Management System</h3>
+          <p>A full-stack CRM application to manage client leads with role-based authentication, real-time status
+            tracking, and analytics dashboard.</p>
+          <div class="project-tags">
+            <span>HTML &amp; CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>MongoDB</span>
+            <span>Node.js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Nishchitha98/FUTURE_FS_02" target="_blank"><i class="fa-brands fa-github"></i>
+              GitHub</a>
+            <a href="https://crm-frontend-futureintern.netlify.app" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
     <div class="section-title">
-      <div class="title-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
-      <h2>Contact here</h2>
+      <div class="title-icon"><i class="fa-solid fa-paper-plane"></i></div>
+      <h2>Get In Touch</h2>
+      <p>Have a project in mind? Let's talk.</p>
     </div>
 
     <div class="contact-container">
-
       <div class="contact-info">
-        <a href="mailto:nishchithanr27@gmail.com" class="contact-link">
-          <p><i class="fa-solid fa-envelope"></i><strong>Email:</strong> nishchithanr27@gmail.com</p>
+        <a href="mailto:nishchithanr27@gmail.com" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>nishchithanr27@gmail.com</p>
+          </div>
         </a>
-        <a href="https://github.com/Nishchitha98" target="_blank" class="contact-link">
-          <p><i class="fa-brands fa-github"></i><strong>GitHub:</strong> github.com/Nishchitha98</p>
+        <a href="https://linkedin.com/in/nishchitha1175" target="_blank" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>linkedin.com/in/nishchitha1175</p>
+          </div>
         </a>
-        <a href="https://linkedin.com/in/nishchitha1175" target="_blank" class="contact-link">
-          <p><i class="fa-brands fa-linkedin"></i><strong>LinkedIn:</strong> linkedin.com/in/nishchitha1175</p>
-        </a>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Mysore,Karnataka" target="_blank"
-          class="contact-link">
-          <p><i class="fa-solid fa-location-dot"></i><strong>Location:</strong> Mysore, Karnataka</p>
+        <a href="https://github.com/Nishchitha98" target="_blank" class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <div>
+            <h4>GitHub</h4>
+            <p>github.com/Nishchitha98</p>
+          </div>
         </a>
       </div>
 
-      <form id="contact-form">
-        <input type="text" name="from_name" placeholder="Your Name" required>
-        <input type="email" name="from_email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="from_name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="from_email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
       </form>
-
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-content">
-
-      <h2 class="footer-name">Nishchitha N R</h2>
-      <p class="footer-tagline">Building ideas into reality 🚀</p>
-
-      <div class="footer-socials">
-        <a href="https://github.com/Nishchitha98" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/nishchitha1175" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="mailto:nishchithanr27@gmail.com">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </div>
-
-      <p class="footer-copy">
-        © 2026 Designed by <span>Nishchitha</span>
-      </p>
-
+    <h2 class="footer-name">Nishchitha N R</h2>
+    <p>Building ideas into reality 🚀</p>
+    <div class="footer-socials">
+      <a href="https://github.com/Nishchitha98" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/nishchitha1175" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:nishchithanr27@gmail.com"><i class="fa-solid fa-envelope"></i></a>
     </div>
+    <p class="footer-copy">&copy; 2026 Nishchitha N R. All rights reserved.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
   <script>
     (function () {
       emailjs.init("aKquBU9C91EioqIh_");
