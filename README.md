@@ -8,7 +8,7 @@ This project showcases my skills, projects, and journey as an aspiring **Full St
 ---
 
 ## 🚀 Live Website
-🔗https://personal-portfolio-futureinterns.netlify.app
+🔗https://nishchitha98.github.io/FUTURE_FS_01/
 
 ---
 
